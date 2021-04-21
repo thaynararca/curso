@@ -20,6 +20,10 @@ mongoose.connect('mongodb://localhost:27017/curso', {
     }
 });
 
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('cliente/build'));
+};
+
 app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
