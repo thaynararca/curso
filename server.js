@@ -32,3 +32,5 @@ app.use(routes);
 app.listen(port, function() {
     console.log(`Server runing on port ${port}`);
 });
+
+/* mongodb+srv://thaynararca-heroku:Desespero@cluster0.dj1op.mongodb.net/curso?retryWrites=true&w=majority */
